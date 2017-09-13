@@ -6,22 +6,24 @@
 		<!-- <link rel="shortcut icon" href="favicon.ico"> -->
 		<link rel="stylesheet" type="text/css" href="css/style.css">
 		<link rel="stylesheet" type="text/css" href="css/reset.css">
-		<link href="https://fonts.googleapis.com/css?family=Lato|Montserrat:300,400,500" rel="stylesheet">
+		<link href="https://fonts.googleapis.com/css?family=Lato:300,700|Montserrat:300,400,500" rel="stylesheet">
 
 		<!-- <script	src="https://code.jquery.com/jquery-3.2.1.js"></script> -->
 		
 		<title>Rafał Soliński - Portfolio - Front-End</title>
 	</head>
 	<body>
-	<nav class="menu__container">
-		<ul class="menu__items">
-			<li class="menu__item"><a href="#" class="link-active"><span class="menu-number">01</span><span class="menu-title">home</span></a></li>	
-			<li class="menu__item"><a href="#"><span class="menu-number">02</span><span class="menu-title">o mnie</span></a></li>	
-			<li class="menu__item"><a href="#"><span class="menu-number">03</span><span class="menu-title">doświadczenie</span></a></li>	
-			<li class="menu__item"><a href="#"><span class="menu-number">04</span><span class="menu-title">portfolio</span></a></li>
-			<li class="menu__contact"><a href="#">contact</a></li>
-		</ul>
-	</nav>
+	<header>
+		<nav class="menu__container">
+			<ul class="menu__items">
+				<li class="menu__item"><a href="#" class="link-active"><span class="menu-number">01</span><span class="menu-title">home</span></a></li>	
+				<li class="menu__item"><a href="#"><span class="menu-number">02</span><span class="menu-title">o mnie</span></a></li>	
+				<li class="menu__item"><a href="#"><span class="menu-number">03</span><span class="menu-title">doświadczenie</span></a></li>	
+				<li class="menu__item"><a href="#"><span class="menu-number">04</span><span class="menu-title">portfolio</span></a></li>
+				<li class="menu__contact"><a href="#">contact</a></li>
+			</ul>
+		</nav>
+	</header>
 	<main>
 		<section class="home">
 			<div class="foto">
@@ -36,25 +38,114 @@
 			</div>
 		</section>
 		<section class="skills">
-
 			<div class="container">
 				<h2 class="section-title">umiejętności</h2>
 				<div class="list-of-skills">
-					<ul>
-						<li><img src="img/icons/html5-mini.png" alt="HTML5"></li>
-						<li><img src="img/icons/js-mini.png" alt="JavaScript"></li>
-						<li><img src="img/icons/css3-mini.png" alt="CSS3"></li>
-						<li><img src="img/icons/gulp-mini.png" alt="Gulp"></li>
-						<li><img src="img/icons/nodejs-mini.png" alt="NodeJS"></li>
-						<li><img src="img/icons/github-mini-white.png" alt="GitHub"></li>
-						<li><img src="img/icons/ps-mini.png" alt="Photoshop"></li>
-						<li><img src="img/icons/ai-mini.png" alt="Illustrator"></li>
-						<li><img src="img/icons/google-mini.png" alt="Google"></li>
-					</ul>		
+					<ul class="y-axis">
+						<li></li>
+						<li></li>
+						<li></li>
+						<li></li>
+						<li></li>
+					</ul>
+					<div class="graph">
+						<div class="graph-column column-html5">
+							<span class="column-icon"><img src="img/icons/html5-mini.png" alt="HTML5"></span>
+						</div>
+						<div class="graph-column column-css3">
+							<span class="column-icon"><img src="img/icons/css3-mini.png" alt="CSS3"></span>
+						</div>
+						<div class="graph-column column-js">
+							<span class="column-icon"><img src="img/icons/js-mini.png" alt="JavaScript"></span>
+						</div>
+						<div class="graph-column column-jquery">
+							<span class="column-icon"><img src="img/icons/jquery-mini.png" alt="JQuery"></span>
+						</div>
+						<div class="graph-column column-gulp">
+							<span class="column-icon"><img src="img/icons/gulp-mini.png" alt="Gulp"></span>
+						</div>
+						<div class="graph-column column-github">
+							<span class="column-icon"><img src="img/icons/github-mini-white.png" alt="GitHub"></span>
+						</div>
+						<div class="graph-column column-nodejs">
+							<span class="column-icon"><img src="img/icons/nodejs-mini.png" alt="NodeJS"></span>
+						</div>
+						<div class="graph-column column-ai">
+							<span class="column-icon"><img src="img/icons/ai-mini.png" alt="Illustrator"></span>
+						</div>
+						<div class="graph-column column-ps">
+							<span class="column-icon"><img src="img/icons/ps-mini.png" alt="Photoshop"></span>
+						</div>
+						<div class="graph-column column-google">
+							<span class="column-icon"><img src="img/icons/google-mini.png" alt="Google"></span>
+						</div>					
+					</div>
+				</div>
+			</div>
+		</section>
+		<section class="future">
+			<div class="container">
+				<h2 class="section-title">plan na przyszłość / rozwój</h2>
+				<div class="future-content">
+					<div>
+						Jako że mój aktualny zawód niewiele ma wspólnego z web dev'em, ciężko jest mi poświęcić na rozwój tyle
+						czasu ile bym chciał. Mając szansę pracować w firmie w której stawia się na rozwój pracownika,
+						przyrost moich developerskich umiejętności byłby proporcjonalny do poświęconego czasu na rozwój - tzn. ogromny!
+					</div>
+					<div class="infografic">
+						<span class="info-element">
+							DTP
+							<div class="description-container dtp">
+								DTP - Zawód w którym aktualnie pracuje. Jako Grafik DTP mam wieloletnie doświadczenie.
+							</div>
+						</span>
+						<i class="fa fa-check-square-o" aria-hidden="true"></i>
+						<i class="fa fa-long-arrow-right" aria-hidden="true"></i> 
+						<span class="info-element">
+							Junior Front-End
+							<div class="description-container front-end">
+								Junior Front-End - Miejsce w którm aktualnie się znajduję na szczeblu kariery Web Dev.
+							</div>
+						</span>
+						<span class="fa fa-check-square-o" aria-hidden="true"></span>
+						<span class="fa fa-long-arrow-right" aria-hidden="true"></span> 
+						<span class="info-element">
+							Fulltime Web Dev
+							<div class="description-container webdev">
+								Fulltime Web Dev - Stanowisko do którego aspiruje i w kierunku którego rozwijam się.
+							</div>
+						</span>
+						<span class="fa fa-pencil-square-o" aria-hidden="true"></span>
+						<span class="fa fa-long-arrow-right" aria-hidden="true"></span>
+						<span class="info-element">
+								JavaScript Developer
+							<div class="description-container jsdev">
+								JavaScript Developer - taki tytuł będzie miało moje przyszłe stanowisko.
+							</div>
+						</span>						
+						<span class="fa fa-square-o" aria-hidden="true"></span>
+					</div>
+					<div class="quote">
+						Always try to be better version of yourself.
+					</div>
 				</div>
 			</div>
 		</section>
 
+	<section class="portfolio">
+		<div class="container">
+			<h2 class="section-title">portfolio</h2>
+			<div class="portfolio-content">
+				<ul class="portfolio-items">
+					<li class="portfolio-item"><img src="img/mogo.jpg" alt="MoGo"></li>
+					<li class="portfolio-item"><img src="img/typer.jpg" alt="Word Counter"></li>
+					<li class="portfolio-item"><img src="img/beautyspot.jpg" alt="Beauty Spot"></li>
+					<li class="portfolio-item"><img src="img/window-effect.jpg" alt="Window Effect"></li>
+					<li class="portfolio-item"><img src="img/traingle-animation.jpg" alt="Traingles animation"></li>
+				</ul>
+			</div>
+		</div>		
+	</section>
 
 		<div class="bg__container">
 			<div class="bg-img"></div>
