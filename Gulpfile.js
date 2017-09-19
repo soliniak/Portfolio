@@ -30,7 +30,7 @@ gulp.task('prefix', function () {
 			browsers: ['last 4 versions'],
 			cascade: false
 		}))
-		.pipe(gulp.dest('src/css/'))
+		.pipe(gulp.dest('src/css/pref/'))
 });
 
 
