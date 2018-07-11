@@ -12,22 +12,22 @@ $(".link, .portfolio-button").click(function() {
 $(window).scroll(function () {
 
 	var sections = $("section");
-	var sectionOffset = sections.offset();
+	// var sectionOffset = sections.offset();
 	var moved = $(window).scrollTop();
 	var menuItems = $(".link");
 
 
 // console.log(sections.eq(i));
 
-	for( var i = 0; i < sections.length; i++){
-		if(moved > 800 * (i + 1)) {
+	for( var i = 1; i < sections.length; i++){
+		if(moved > ($(sections).height() * i) / 1.2 ) {
 // if(moved > ($("section").get(1).offsetTop)) {
-			$(".link").removeClass("link-active")
+			$(".link").removeClass("link-active");
 
-			var link = $(".link").get(i + 1);
+			var link = $(".link").get(i);
 
-			$(".page-number").text("0" + (i + 2) + " ");
-			$(".page-title").text("/ " + $(sections)[i + 1].id);
+			$(".page-number").text("0" + (i + 1) + " ");
+			$(".page-title").text("/ " + $(sections)[i].id);
 			$(link).addClass("link-active");
 
 

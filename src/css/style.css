@@ -454,6 +454,18 @@ a:hover, a:focus {
     box-sizing: border-box; }
   .portfolio__item:hover .source, .portfolio__item:hover .live {
     opacity: 1; }
+  .portfolio__item-title {
+    background-color: rgba(30, 30, 30, 0.5);
+    color: #fff;
+    display: block;
+    font-family: Montserrat, sans-serif;
+    font-size: .8rem;
+    font-weight: 500;
+    padding: .2rem 0;
+    position: absolute;
+    text-align: center;
+    top: 0;
+    width: 100%; }
 
 .target {
   position: absolute;
