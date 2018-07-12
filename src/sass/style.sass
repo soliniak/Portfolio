@@ -7,14 +7,17 @@ $containerWidth: 1200px
 
 body
 	padding: constant(safe-area-inset-top) constant(safe-area-inset-right) constnt(safe-area-inset-bottom) constnt(safe-area-inset-left)
+	padding: 0
 	background-image: url('../img/background5.jpg')
 	background-size: cover
 	background-position: center center
 	background-repeat: no-repeat
 	background-attachment: fixed
+	overflow-x: hidden
 section
 	height: 100%
 	width: 100%
+
 
 
 .content__container
@@ -57,7 +60,6 @@ a.link:focus ~ .menu-title
 		color: $grey
 		font-size: 1.2rem
 		font-weight: normal
-		display: inline-block
 		position: absolute
 		top: 0
 
@@ -105,7 +107,7 @@ a.link:focus ~ .menu-title
 			color: $grey
 
 
-.link-active .menu-number, .link-active .menu-title
+.link-active .menu-title
 	display: block
 	color: $yellow
 
@@ -115,8 +117,9 @@ main
 	position: absolute
 	top: 0
 	left: 0
-	height: 100%
+	height: 100vh
 	width: 100%
+
 
 .home
 	display: flex
@@ -707,7 +710,7 @@ a:hover, a:focus
 		transition: all .5s ease-in-out
 	.menu__items
 		height: 300px
-		width: 320px
+		width: 100%
 		display: flex
 		flex-direction: column
 		.menu__item, .link
@@ -801,7 +804,7 @@ a:hover, a:focus
 		transition: all .5s ease-in-out
 	.menu__items
 		height: 300px
-		width: 375px
+		width: 100%
 		display: flex
 		flex-direction: column
 		.menu__item, .link
@@ -903,7 +906,7 @@ a:hover, a:focus
 		transition: all .5s ease-in-out
 	.menu__items
 		height: 300px
-		width: 414px
+		width: 100%
 		display: flex
 		flex-direction: column
 		.menu__item, .link
@@ -919,6 +922,7 @@ a:hover, a:focus
 			position: relative
 			left: -100px
 			color: $yellow
+			display: none
 		.menu-title
 			display: flex
 			align-items: center
