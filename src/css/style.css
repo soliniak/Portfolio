@@ -9,7 +9,7 @@ body {
   overflow-x: hidden; }
 
 section {
-  height: 100%;
+  height: 100vh;
   width: 100%; }
 
 .content__container, .list-of-skills, .future__content, .portfolio__items {
@@ -109,13 +109,11 @@ main {
   flex-direction: column;
   align-items: center;
   justify-content: center; }
-  .home .foto {
-    margin-bottom: 5rem; }
-    .home .foto img {
-      height: 200px;
-      width: 200px;
-      overflow: hidden;
-      z-index: 3; }
+  .home .foto img {
+    height: 200px;
+    width: 200px;
+    overflow: hidden;
+    z-index: 3; }
   .home .welcome-text {
     text-align: center; }
     .home .welcome-text h2, .home .welcome-text h4 {
@@ -362,12 +360,12 @@ a:hover, a:focus {
   font-weight: 300;
   color: #c2bebb;
   font-size: 1.5rem;
-  padding: 5rem 2rem 2rem 2rem;
+  padding: 1rem 2rem 0 2rem;
   line-height: 2rem;
   text-indent: 1rem; }
 
 .infografic {
-  padding-top: 5rem;
+  padding: 2rem 0 0 0;
   font-weight: bold;
   color: #f8d44a;
   text-indent: 0; }
@@ -382,9 +380,6 @@ a:hover, a:focus {
   color: #C05E31; }
 
 .quote {
-  position: absolute;
-  bottom: 0;
-  right: 0;
   padding: 2rem;
   font-style: italic;
   color: #c2bebb;
@@ -625,7 +620,6 @@ a:hover, a:focus {
     font-size: 1.3rem; }
   .infografic {
     font-size: 1.5rem;
-    padding-top: 3rem;
     line-height: 3rem; }
   .description-container {
     width: 150px;
@@ -635,7 +629,17 @@ a:hover, a:focus {
   .menu-title {
     font-size: .8rem; }
     .menu-title::before {
-      height: 10px; } }
+      height: 10px; }
+  .infografic {
+    display: flex;
+    flex-direction: column; }
+  .fa-long-arrow-right {
+    transform: rotate(90deg);
+    margin: 5px 0; }
+  .description-container {
+    width: 150px;
+    left: 50%;
+    transform: translateX(-55%); } }
 
 @media (max-width: 816px) {
   .content__container, .list-of-skills, .future__content, .portfolio__items, .contact__content {
@@ -658,7 +662,206 @@ a:hover, a:focus {
   .icon-description {
     transform: rotate(-10deg); } }
 
+.future__content {
+  height: auto; }
+
+@media (max-width: 600px) {
+  .home .foto {
+    margin-bottom: 0; }
+    .home .foto img {
+      width: 100px;
+      height: 100px; }
+  .home .welcome-text h2, .home .welcome-text h4 {
+    font-size: 1rem; }
+  .home .welcome-text h3 {
+    font-size: 2rem; }
+  .portfolio-button {
+    margin-top: 3rem;
+    width: 150px;
+    height: 20px;
+    font-size: 1.2rem; }
+  .menu__container {
+    padding: 0;
+    transition: all .5s ease-in-out; }
+  .menu__items {
+    height: 300px;
+    width: 100%;
+    display: flex;
+    flex-direction: column; }
+    .menu__items .menu__item, .menu__items .link {
+      margin: 0;
+      height: 50px;
+      width: 100%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      border-bottom: 1px solid #f8d44a;
+      background-color: rgba(248, 212, 74, 0.7); }
+    .menu__items .menu-number {
+      position: relative;
+      left: -100px;
+      color: #f8d44a;
+      display: none; }
+    .menu__items .menu-title {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      color: #000;
+      margin: 0; }
+  .menu-title::before {
+    display: none; }
+  .open {
+    top: 0; }
+  .closed {
+    top: -250px; }
+  .list-of-skills {
+    height: 200px; }
+  .list-of-skills, .future__content, .portfolio__items, .contact__content {
+    width: 360px; }
+  .graph-column {
+    width: 20px; }
+  .column-icon img {
+    width: 20px;
+    height: auto; }
+  .portfolio__item {
+    width: 100%; }
+  .contact__content {
+    flex-direction: column; }
+  section ~ .portfolio {
+    height: auto;
+    margin: 0 0 4rem 0; }
+  .future-description {
+    font-size: 1rem;
+    line-height: 1rem;
+    padding-top: 1rem; }
+  .infografic {
+    font-size: 1rem;
+    line-height: 1rem; }
+  .footer__container {
+    display: none; }
+  .contact__content .left-contact, .contact__content .right-contact {
+    width: 330px;
+    padding-left: 1rem; }
+  .contact__content .right-contact {
+    padding: 1rem;
+    order: 1;
+    line-height: 2.5rem; }
+  .left-contact {
+    order: 2; }
+  .button {
+    margin: 3rem 0; }
+  .burger {
+    display: block; }
+  .contact-with-me {
+    font-size: 1.4rem; }
+  .graph-column {
+    background: #f8d44a; }
+    .graph-column::before, .graph-column::after {
+      display: none; }
+  .column-icon img {
+    top: -25px; } }
+
+@media (max-width: 375px) {
+  .home .foto {
+    margin-bottom: 0; }
+    .home .foto img {
+      width: 100px;
+      height: 100px; }
+  .home .welcome-text h2, .home .welcome-text h4 {
+    font-size: 1rem; }
+  .home .welcome-text h3 {
+    font-size: 2rem; }
+  .portfolio-button {
+    margin-top: 3rem;
+    width: 150px;
+    height: 20px;
+    font-size: 1.2rem; }
+  .menu__container {
+    padding: 0;
+    transition: all .5s ease-in-out; }
+  .menu__items {
+    height: 300px;
+    width: 100%;
+    display: flex;
+    flex-direction: column; }
+    .menu__items .menu__item, .menu__items .link {
+      margin: 0;
+      height: 50px;
+      width: 100%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      border-bottom: 1px solid #f8d44a;
+      background-color: rgba(248, 212, 74, 0.7); }
+    .menu__items .menu-number {
+      position: relative;
+      left: -100px;
+      color: #f8d44a; }
+    .menu__items .menu-title {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      color: #000; }
+  .menu-title::before {
+    display: none; }
+  .open {
+    top: 0; }
+  .closed {
+    top: -250px; }
+  .list-of-skills {
+    height: 200px; }
+  .graph-column {
+    width: 20px; }
+  .column-icon img {
+    width: 20px;
+    height: auto; }
+  .portfolio__item {
+    width: 100%; }
+  .contact__content {
+    flex-direction: column; }
+  section ~ .portfolio {
+    height: auto;
+    margin: 0 0 4rem 0; }
+  .future-description {
+    font-size: 1rem;
+    line-height: 1rem;
+    padding-top: 1rem; }
+  .infografic {
+    font-size: 1rem;
+    line-height: 1rem; }
+  .footer__container {
+    display: none; }
+  .contact__content .left-contact, .contact__content .right-contact {
+    width: 330px;
+    padding-left: 1rem; }
+  .contact__content .right-contact {
+    padding: 1rem;
+    order: 1;
+    line-height: 2.5rem; }
+  .left-contact {
+    order: 2; }
+  .button {
+    margin: 3rem 0; }
+  .burger {
+    display: block; }
+  .contact-with-me {
+    font-size: 1.4rem; }
+  .graph-column {
+    background: #f8d44a; }
+    .graph-column::before, .graph-column::after {
+      display: none; }
+  .column-icon img {
+    top: -25px; }
+  section ~ .skills {
+    height: 300px; }
+  .icon-description {
+    display: none; }
+  .graph {
+    padding: 0; } }
+
 @media (max-width: 320px) {
+  .list-of-skills, .future__content, .portfolio__items, .contact__content {
+    width: 320px; }
   .home .foto {
     margin-bottom: 0; }
     .home .foto img {
@@ -727,8 +930,7 @@ a:hover, a:focus {
     padding-top: 1rem; }
   .infografic {
     font-size: 1rem;
-    line-height: 1rem;
-    padding: 0; }
+    line-height: 1rem; }
   .future__content {
     height: 350px; }
   .footer__container {
@@ -746,204 +948,5 @@ a:hover, a:focus {
     margin: 3rem 0; }
   .burger {
     display: block; }
-  section ~ .skills {
-    height: 300px; } }
-
-@media (max-width: 375px) {
-  .home .foto {
-    margin-bottom: 0; }
-    .home .foto img {
-      width: 100px;
-      height: 100px; }
-  .home .welcome-text h2, .home .welcome-text h4 {
-    font-size: 1rem; }
-  .home .welcome-text h3 {
-    font-size: 2rem; }
-  .portfolio-button {
-    margin-top: 3rem;
-    width: 150px;
-    height: 20px;
-    font-size: 1.2rem; }
-  .menu__container {
-    padding: 0;
-    transition: all .5s ease-in-out; }
-  .menu__items {
-    height: 300px;
-    width: 100%;
-    display: flex;
-    flex-direction: column; }
-    .menu__items .menu__item, .menu__items .link {
-      margin: 0;
-      height: 50px;
-      width: 100%;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      border-bottom: 1px solid #f8d44a;
-      background-color: rgba(248, 212, 74, 0.7); }
-    .menu__items .menu-number {
-      position: relative;
-      left: -100px;
-      color: #f8d44a; }
-    .menu__items .menu-title {
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      color: #000; }
-  .menu-title::before {
-    display: none; }
-  .open {
-    top: 0; }
-  .closed {
-    top: -250px; }
-  .list-of-skills {
-    height: 200px; }
-  .list-of-skills, .future__content, .portfolio__items, .contact__content {
-    width: 300px; }
-  .graph-column {
-    width: 20px; }
-  .column-icon img {
-    width: 20px;
-    height: auto; }
-  .portfolio__item {
-    width: 100%; }
-  .contact__content {
-    flex-direction: column; }
-  section ~ .portfolio {
-    height: auto;
-    margin: 0 0 4rem 0; }
-  .future-description {
-    font-size: 1rem;
-    line-height: 1rem;
-    padding-top: 1rem; }
-  .infografic {
-    font-size: 1rem;
-    line-height: 1rem;
-    padding: 0; }
-  .future__content {
-    height: 350px; }
-  .footer__container {
-    display: none; }
-  .contact__content .left-contact, .contact__content .right-contact {
-    width: 330px;
-    padding-left: 1rem; }
-  .contact__content .right-contact {
-    padding: 1rem;
-    order: 1;
-    line-height: 2.5rem; }
-  .left-contact {
-    order: 2; }
-  .button {
-    margin: 3rem 0; }
-  .burger {
-    display: block; }
-  .contact-with-me {
-    font-size: 1.4rem; }
-  .graph-column {
-    background: #f8d44a; }
-    .graph-column::before, .graph-column::after {
-      display: none; }
-  .column-icon img {
-    top: -25px; }
-  section ~ .skills {
-    height: 300px; } }
-
-@media (max-width: 414px) {
-  .home .foto {
-    margin-bottom: 0; }
-    .home .foto img {
-      width: 100px;
-      height: 100px; }
-  .home .welcome-text h2, .home .welcome-text h4 {
-    font-size: 1rem; }
-  .home .welcome-text h3 {
-    font-size: 2rem; }
-  .portfolio-button {
-    margin-top: 3rem;
-    width: 150px;
-    height: 20px;
-    font-size: 1.2rem; }
-  .menu__container {
-    padding: 0;
-    transition: all .5s ease-in-out; }
-  .menu__items {
-    height: 300px;
-    width: 100%;
-    display: flex;
-    flex-direction: column; }
-    .menu__items .menu__item, .menu__items .link {
-      margin: 0;
-      height: 50px;
-      width: 100%;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      border-bottom: 1px solid #f8d44a;
-      background-color: rgba(248, 212, 74, 0.7); }
-    .menu__items .menu-number {
-      position: relative;
-      left: -100px;
-      color: #f8d44a;
-      display: none; }
-    .menu__items .menu-title {
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      color: #000; }
-  .menu-title::before {
-    display: none; }
-  .open {
-    top: 0; }
-  .closed {
-    top: -250px; }
-  .list-of-skills {
-    height: 200px; }
-  .list-of-skills, .future__content, .portfolio__items, .contact__content {
-    width: 360px; }
-  .graph-column {
-    width: 20px; }
-  .column-icon img {
-    width: 20px;
-    height: auto; }
-  .portfolio__item {
-    width: 100%; }
-  .contact__content {
-    flex-direction: column; }
-  section ~ .portfolio {
-    height: auto;
-    margin: 0 0 4rem 0; }
-  .future-description {
-    font-size: 1rem;
-    line-height: 1rem;
-    padding-top: 1rem; }
-  .infografic {
-    font-size: 1rem;
-    line-height: 1rem;
-    padding: 0; }
-  .future__content {
-    height: 350px; }
-  .footer__container {
-    display: none; }
-  .contact__content .left-contact, .contact__content .right-contact {
-    width: 330px;
-    padding-left: 1rem; }
-  .contact__content .right-contact {
-    padding: 1rem;
-    order: 1;
-    line-height: 2.5rem; }
-  .left-contact {
-    order: 2; }
-  .button {
-    margin: 3rem 0; }
-  .burger {
-    display: block; }
-  .contact-with-me {
-    font-size: 1.4rem; }
-  .graph-column {
-    background: #f8d44a; }
-    .graph-column::before, .graph-column::after {
-      display: none; }
-  .column-icon img {
-    top: -25px; }
   section ~ .skills {
     height: 300px; } }
